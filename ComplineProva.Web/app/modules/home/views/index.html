@@ -1,0 +1,41 @@
+﻿<hr />
+<div class="row">
+    <div class="col-md-12">
+        <div class="row">
+            <div class="col-md-8 pull-left">
+
+                <div class="form-inline">
+                    <input type="hidden" value="{{ tarefa.id}}" />
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Nome" ng-model="tarefa.titulo" />
+                    </div>
+                    <div class="form-group">
+                        <label>Prioridade</label>
+                        <select class="form-control" ng-model="tarefa.prioridade">
+                            <option value="2">Alta</option>
+                            <option value="1">Média</option>
+                            <option selected value="0">Baixa</option>
+                        </select>
+                    </div>
+                    <span class="form-group">
+                        <button class="btn btn-primary" ng-click="saveOrUpdate(tarefa)"><i class="fa fa-plus"></i></button>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <br /><br />
+
+    <ul class="list-unstyled" ng-repeat="tarefa in tarefas | orderBy:['-prioridade','-importante'] ">
+        <li class="tarefa-item">
+            <input type="hidden" value="{{ tarefa.Id}}" />
+            <span><span class="badge badge-{{ tarefa.prioridade }}">Prioridade: {{ tarefa.prioridade | enumPrioridades }}</span>Tarefa: {{ tarefa.titulo }}<span ng-show="tarefa.importante == 1" class="badge badge-danger">Importante</span></span>
+            <div class="btn-group pull-right">
+                <button class="btn btn-warning btn-sm" title="Definir como importante" ng-click="setImportant(tarefa)"><i class="fa fa-exclamation-circle"></i></button>
+                <button class="btn btn-info btn-sm" title="Selecionar para Editar" ng-click="select(tarefa)"><i class="fa fa-pencil"></i></button>
+                <button class="btn btn-danger btn-sm" title="Excluir" ng-click="delete(tarefa)"><i class="fa fa-remove"></i></button>
+            </div>
+        </li>
+    </ul>
+</div>

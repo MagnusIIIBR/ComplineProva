@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br" ng-app="app" ng-controller="AppCtrl">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Prova</title>
+    <!-- ------CSS------ -->
+    <link href="content/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="content/css/bootstrap-default.min.css" rel="stylesheet" />
+    <link href="content/css/custom.css" rel="stylesheet" />
+    <link href="content/vendor/toastr/toastr.min.css" rel="stylesheet" />
+    <link href="content/vendor/animate/animate.css" rel="stylesheet" />
+</head>
+<body role="document">
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#/">Prova</a>
+            </div>
+        </div>
+    </div>
+    <div class="container" role="main">
+        <br />
+        <br /><br />
+        <div ng-view></div>
+    </div>
+    <!-- ------Base Scripts------ -->
+    <script src="content/vendor/jquery/jquery-2.1.1.min.js"></script>
+    <script src="content/vendor/bootstrap/bootstrap.min.js"></script>
+    <script src="content/vendor/toastr/toastr.min.js"></script>
+    <script src="content/js/startup.js"></script>
+    <!-- ------Angular JS------ -->
+    <script src="content/vendor/angularjs/angular.min.js"></script>
+    <script src="content/vendor/angularjs/angular-resource.min.js"></script>
+    <script src="content/vendor/angularjs/angular-route.min.js"></script>
+    <script src="content/vendor/angularjs/angular-sanitize.min.js"></script>
+    <script src="content/vendor/angularjs/angular-animate.min.js"></script>
+    <script src="content/vendor/angularjs/angular-cookies.min.js"></script>
+    <script src="content/vendor/angularjs/angular-touch.min.js"></script>
+    <!-- ------External Directives------ -->
+    <script src="content/vendor/angularjs/directives/ui-bootstrap.min.js"></script>
+    <script src="content/vendor/angularjs/directives/ui-bootstrap-tpls.min.js"></script>
+
+    <!-- ------Configuration------ -->
+    <script src="modules/config.js"></script>
+    <!-- ------Controllers------ -->
+    <script src="modules/AppCtrl.js"></script>
+    <script src="modules/home/controllers/HomeCtrl.js"></script>
+    <!-- Repositories -->
+    <script src="repositories/TarefaRepository.js"></script>
+</body>
+</html>

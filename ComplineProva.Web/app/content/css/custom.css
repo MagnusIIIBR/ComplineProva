@@ -1,0 +1,22 @@
+﻿.badge-danger, .badge-3 {
+    background-color: #b94a48 !important;
+}
+
+.badge-warning, .badge-2 {
+    background-color: #f89406 !important;
+}
+
+
+.badge-success {
+    background-color: #468847 !important;
+}
+
+
+.badge-info, .badge-1 {
+    background-color: #3a87ad !important;
+}
+
+.badge-inverse {
+    background-color: #333333 !important;
+}
+

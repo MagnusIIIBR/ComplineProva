@@ -41,12 +41,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\ITarefaRepository.cs" />
+    <Compile Include="Tarefa.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ComplineProva.Utils\ComplineProva.Utils.csproj">
-      <Project>{0d822ff7-b428-4ba9-918c-00a9eec9f222}</Project>
-      <Name>ComplineProva.Utils</Name>
-    </ProjectReference>
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
