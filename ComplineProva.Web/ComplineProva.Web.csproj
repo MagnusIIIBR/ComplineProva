@@ -196,6 +196,10 @@
     <Content Include="app\modules\home\controllers\HomeCtrl.js" />
     <Content Include="app\modules\home\views\index.html" />
     <Content Include="app\repositories\TarefaRepository.js" />
+    <Content Include="App_Data\ComplineProvaDatabase.mdf" />
+    <Content Include="App_Data\ComplineProvaDatabase_log.ldf">
+      <DependentUpon>ComplineProvaDatabase.mdf</DependentUpon>
+    </Content>
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -214,7 +218,6 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Views\Home\" />
   </ItemGroup>
   <ItemGroup>
